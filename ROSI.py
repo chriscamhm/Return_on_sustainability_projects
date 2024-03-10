@@ -41,7 +41,7 @@ plot_df(df, x=df.index, y=df['Inversión Social Resto'], title='Inversión Socia
 
 # Time series data source: fpp pacakge in R.
 
-# Draw Plot
+# Draw Plot of social incidents ($ COP of impact on production) and social investment projects ($ COP)
 def plot_inc(df, x, y, title="", xlabel='Date', ylabel='No Incidentes', dpi=100):
     plt.figure(figsize=(16,5), dpi=dpi)
     plt.plot(x, y, color='tab:red')
@@ -106,7 +106,7 @@ ax4.title.set_text('Incidentes de entorno Castilla')
 
 
 # In[9]:
-
+# Comparison between Castilla oil field and Ecopetrol national data
 
 from matplotlib.dates import DateFormatter
 import matplotlib.dates as mdates
